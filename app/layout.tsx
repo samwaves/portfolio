@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Pixel } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const pixel = Geist_Pixel({
+  variable: "--font-pixel",
+  fallback: ["system-ui", "arial"],
   subsets: ["latin"],
 });
 
@@ -19,11 +16,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${pixel.variable} h-full`}>
+      <body className="min-h-full max-w-3xl mx-auto p-5 flex flex-col gap-5 font-pixel">
+        <Navbar />
+        <div className="my-10">{children}</div>
+      </body>
     </html>
   );
 }
