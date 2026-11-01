@@ -1,6 +1,6 @@
 const SocialMediaIcons = () => {
   return (
-    <div className="flex items-center space-x-4 [&_svg]:size-5 [&_svg]:text-black">
+    <div className="flex items-center space-x-4 [&_svg]:size-5">
       <a
         href="https://github.com/samwaves"
         target="_blank"
