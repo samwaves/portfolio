@@ -8,7 +8,7 @@ interface SectionProps {
 export default function Section({ title, children }: SectionProps) {
   return (
     <section className="grid gap-5">
-      <h2 className="text-3xl">{title}</h2>
+      <h2>{title}</h2>
       {children}
     </section>
   );
