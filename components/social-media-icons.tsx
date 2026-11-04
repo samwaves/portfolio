@@ -26,7 +26,7 @@ const SocialMediaIcons = () => {
       </a>
 
       <a
-        href="mailto:samuel@samwave.io"
+        href="mailto:sam@samwave.io"
         className="hover:opacity-80 transition duration-300"
         aria-label="Email"
       >

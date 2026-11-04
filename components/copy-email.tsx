@@ -10,12 +10,12 @@ export default function CopyEmail() {
       type="button"
       onClick={() => {
         navigator.clipboard
-          .writeText("samuel@samwave.io")
+          .writeText("sam@samwave.io")
           .then(() => {
             setLabel("Copied!");
             setTimeout(() => setLabel("Copy Email"), 2000);
           })
-          .catch(() => alert("Couldn't copy. Email: samuel@samwave.io"));
+          .catch(() => alert("Couldn't copy. Email: sam@samwave.io"));
       }}
       className="cursor-pointer"
     >

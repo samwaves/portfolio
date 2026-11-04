@@ -1,8 +1,13 @@
+import ArticleLayout from "@/components/article-layout";
+
 export default function Page() {
   return (
-    <>
-      <h1>Avatar Creator</h1>
-      <p>This is a paragraph describing my project.</p>
-    </>
+    <ArticleLayout
+      title="Avatar Creator"
+      subtitle="NextJS • Project at Alphabag"
+    >
+      <h2>Heading</h2>
+      <p>Paragraph</p>
+    </ArticleLayout>
   );
 }

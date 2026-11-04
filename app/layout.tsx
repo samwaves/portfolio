@@ -26,7 +26,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </main>
         <footer>
           Built with Next.js •{" "}
-          <a href="https://github.com/samwaves/portfolio">View source</a>
+          <a href="https://github.com/samwaves/portfolio" target="_blank">
+            View source ↗
+          </a>
         </footer>
       </body>
     </html>
