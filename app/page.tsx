@@ -74,7 +74,16 @@ export default function Home() {
           subtitle="NextJS • Supabase • Personal Project"
           description="A custom note-editor built from scratch without AI assistance. Includes Google OAuth and a backend for saving notes."
           href="/projects/streamlined-notes"
-          image={avatarCreatorThumbnail}
+        />
+        <Card
+          title="Handwriting Classifier"
+          subtitle="NextJS • Supabase • Personal Project"
+          description="WIP"
+        />
+        <Card
+          title="Streamlined Notes"
+          subtitle="NextJS • Supabase • Personal Project"
+          description="WIP"
         />
       </Section>
 
